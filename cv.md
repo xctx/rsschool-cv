@@ -1,14 +1,15 @@
 # Curriculum vitae
 --- 
 ## PERSONAL INFORMATION
- > Dzmitry Kamenski
- > phone: +375295382064
+ Dzmitry Kamenski  
+ > phone: +375295382064  
+ > e-mail: xcat182@gmail.com  
 
 ## SUMMARY
- Experienced system administrator and passionate programmer, specialized in developing  and supporting various IT projects, seeking to dive into challenging new work. 
+ Experienced system administrator and passionate programmer, specialized in developing  and supporting various IT projects, seeking to dive into challenging new work.  
  Proven ability to drive projects to completion and provide support for them along with strong troubleshooting skill as well as the ability to work well with little oversight single or in collaboration - it makes me valuable addition to any team. 
 
- ## SKILLS
+## SKILLS
 * Networks, Linux, bash, apache, nginx, MySQL, SQLite, PostgreSQL; 
 * HTML5, CSS3, JavaScript, PHP; 
 * Adobe Photoshop; 
