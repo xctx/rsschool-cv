@@ -1,0 +1,65 @@
+html,
+body,
+.grid-container {
+    height: 100%;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". info photo ." ". summary summary ." ". skills skills ." ". code code ." ". work work ." ". education education ." ". personal personal ." ". footer footer .";
+}
+
+.cv {
+    grid-area: cv;
+}
+
+.cv-data {
+    grid-area: cv-data;
+}
+
+.info {
+    grid-area: info;
+}
+
+.photo {
+    grid-area: photo;
+    padding-top: 1.2em;
+}
+
+.summary {
+    grid-area: summary;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.code {
+    grid-area: code;
+}
+
+.work {
+    grid-area: work;
+}
+
+.education {
+    grid-area: education;
+}
+
+.personal {
+    grid-area: personal;
+}
+
+.footer {
+    grid-area: footer;
+    min-height: 2em;
+    align-content: flex-end;
+}
+
+
+}
