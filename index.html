@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dzmitry Kamenski CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="info">
+            <header>
+                <h1>Dzmitry Kamenski CV</h1>
+
+                <ul>
+                    <li>phone: <a href="tel:+375295382064">+375(29)5382064</a></li>
+                    <li>e-mail: <a href="mailto:xcat182@gmail.com">xcat182@gmail.com</a></li>
+                </ul>
+            </header>
+        </div>
+        <div class="photo"><img src="avatar.jpg" alt="In real life I look almost the same"></div>
+
+        <div class="summary">
+            <main>
+                <h2>Summary</h2>
+                <em>Experienced system administrator and passionate programmer</em>, specialized in developing and supporting various IT projects, seeking to dive into challenging new work. Proven ability to drive projects to completion and provide support
+                for them along with strong troubleshooting skill as well as the ability to work well with little oversight single or in collaboration - it makes me valuable addition to any team.
+            </main>
+        </div>
+
+        <div class="skills">
+            <article>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Networks, Linux, bash, apache, nginx, MySQL, SQLite, PostgreSQL;</li>
+                    <li>HTML5, CSS3, JavaScript, PHP;</li>
+                    <li>Adobe Photoshop;</li>
+                    <li>MS Windows, AD, MS SQL Server;</li>
+                    <li>VB, AutoIT, Delphi, batch file;</li>
+                    <li>Troubleshooting / Customers support;</li>
+                    <li>Security focused approach / Pentesting (sqlmap)</li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="code">
+            <article>
+                <h2>Code example</h2>
+                <pre>
+function findWordSequence(headTail){
+ 
+  var headTail = headTail+headTail[0];  // tail is a head, lets add it
+  
+  // traversing wordList to match the word by provided pattern
+  const findWord = (start, fin, len) => { 
+    for (var i=0; i &lt; wordList.length; i++){
+      if ((wordList[i].length == len) &&
+          (wordList[i][0] == start) &&
+          (wordList[i][wordList[i].length-1] == fin)
+         ){
+         return wordList[i];
+          }
+    }
+    return 0; // return 0 if no word has been found
+  }
+  
+  var wordPatterns = []; // [start,fin,len]
+  var text = headTail.toLowerCase().match(/[a-z]/g);   // parse all letters 
+  var text2 = headTail.toLowerCase().match(/\d{1,}/g); // and word lengths
+   
+  for (var i=0;i &lt; text2.length;i++){ // fill wordPatterns 
+    wordPatterns[i] = [text[i],text[i+1],text2[i]];
+  }
+  
+  for (i=0; i &lt; text2.length; i++){ // traverse wordList to find words chain
+    var x = findWord (wordPatterns[i][0],wordPatterns[i][1],wordPatterns[i][2]);
+    if (x == 0){
+      wordPatterns=[]; // if at least one word is missed, we make array empty
+      break;
+    }
+    wordPatterns[i] = x;
+  }
+
+  return wordPatterns;
+}
+  </pre>
+            </article>
+        </div>
+
+        <div class="work">
+            <article>
+                <h2>Work experience</h2>
+
+                <section>
+                    <h3>15/08/2002–Present Software engineer, JSC "Mozyr Oil Refinery"</h3>
+                    <ul>
+                        <li>Server &amp; Network infrastructure deployment (AD, Firewall);</li>
+                        <li>Data migration &amp; System backups maintainance;</li>
+                        <li>MS Windows Server, SQL Server administration;</li>
+                        <li>Local server development (ASP, HTML, CSS, JS, SQL);</li>
+                        <li>Applied software development (MS SQL, SQLite, VBA, JS, Python);</li>
+                        <li>Troubleshooting, customers support;</li>
+                        <li>IT accidents investigation</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>01/08/2010–01/10/2016 Co-founder, developer, Video Flirt limited</h3>
+                    <ul>
+                        <li>front-end design (Adobe Flash, HTML, CSS);</li>
+                        <li>site promotion, SEO;</li>
+                        <li>customers support.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>01/09/2003–Present Part-time freelancer (remote)</h3>
+                    <ul>
+                        <li>Web-development (WordPress, OpenCart, HTML, CSS, JS, PHP, SEO);</li>
+                        <li>Windows &amp; Web automation tools development (AutoIT, VB, Delphi, PHP).</li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+
+        <div class="education">
+            <h2>Education</h2>
+            01/09/1996–30/06/2002 Belarusian State University of Informatics &amp; Radioelectronics, FITC, systems engineer</div>
+        <div class="personal">
+            <h2>Personal skills</h2>Good communication skill, team player, English A2 <br/></div>
+        <div class="footer">
+            <footer><a href="https://github.com/xctx/">My GitHub</a> | &copy; 2021 |
+                <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="80" alt="Rolling Scopes School"></a>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
