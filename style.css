@@ -53,7 +53,7 @@ body,
 
 .footer {
     grid-area: footer;
-    min-height: 2em;
+    min-height: 5em;
     align-content: flex-end;
 }
 
