@@ -6,6 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Dzmitry Kamenski CV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body>
@@ -52,7 +55,7 @@
         <div class="code">
             <article>
                 <h2>Code example</h2>
-                <pre>
+                <pre><code class="language-js">
 function findWordSequence(headTail){
  
   var headTail = headTail+headTail[0];  // tail is a head, lets add it
@@ -88,7 +91,7 @@ function findWordSequence(headTail){
   }
 
   return wordPatterns;
-}
+}</code>
   </pre>
             </article>
         </div>
