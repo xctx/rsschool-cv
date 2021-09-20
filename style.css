@@ -9,10 +9,10 @@ body,
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas: ". info photo ." ". summary summary ." ". skills skills ." ". code code ." ". work work ." ". education education ." ". personal personal ." ". footer footer .";
+    grid-template-areas: ". info ." ". summary ." ". skills ." ". code ." ". work ." ". education ." ". personal ." ". footer .";
 }
 
 .cv {
@@ -25,11 +25,6 @@ body,
 
 .info {
     grid-area: info;
-}
-
-.photo {
-    grid-area: photo;
-    padding-top: 1.2em;
 }
 
 .summary {
