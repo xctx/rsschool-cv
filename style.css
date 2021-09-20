@@ -1,10 +1,14 @@
 html,
-body,
+body{
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(64, 96, 128) , rgb(255, 255, 255));
+}
+
 .grid-container {
     height: 100%;
     margin: 0;
     font-size: 1.05em;
-    background-image: linear-gradient(to right, rgb(64, 96, 128) , rgb(255, 255, 255));
 }
 
 .grid-container {
@@ -57,5 +61,47 @@ body,
     align-content: flex-end;
 }
 
+/* Responsive hamburger menu */
 
+#menu-container {
+    width: 8fr;
+    background: #000;
+}
+  
+  #menu-items { display: flex; }
+  #menu-items a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #menu-items a:hover { background: lightseagreen; }
+  
+  #menu-container label, #heaven { display: none; }
+  
+  @media screen and (max-width: 768px){
+  
+    #menu-items a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  
+    #menu-container label {
+      display: inline-block;
+      color: white;
+      background: teal;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    #menu-items { display: none; }
+    #menu-container input:checked ~ #menu-items { display: block; }
+  }
+  
+  
 }

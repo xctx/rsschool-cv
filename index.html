@@ -13,9 +13,23 @@
 
 <body>
 
+    <nav id="menu-container">
+        <label for="heaven">&#9776;</label>
+        <input type="checkbox" id="heaven" />
+
+        <div id="menu-items">
+            <a href="#info">Home</a>
+            <a href="#summary">Summary</a>
+            <a href="#skills">Skills</a>
+            <a href="#code">Code</a>
+            <a href="#work">Work</a>
+            <a href="#education">Education</a>
+        </div>
+    </nav>
+
     <div class="grid-container">
 
-        <div class="info">
+        <div class="info" id="info">
             <header>
                 <h1>Dzmitry Kamenski CV</h1>
                 <figure>
@@ -29,7 +43,7 @@
             </header>
         </div>
 
-        <div class="summary">
+        <div class="summary" id="summary">
             <main>
                 <h2>Summary</h2>
                 <em>Experienced system administrator and passionate programmer</em>, specialized in developing and supporting various IT projects, seeking to dive into challenging new work. Proven ability to drive projects to completion and provide support
@@ -37,7 +51,7 @@
             </main>
         </div>
 
-        <div class="skills">
+        <div class="skills" id="skills">
             <article>
                 <h2>Skills</h2>
                 <ul>
@@ -53,7 +67,7 @@
             </article>
         </div>
 
-        <div class="code">
+        <div class="code" id="code">
             <article>
                 <h2>Code example</h2>
                 <pre><code class="language-js">
@@ -68,10 +82,10 @@ const absentVowel = (x) => {
             </article>
         </div>
 
-        <div class="work">
+        <div class="work" id="work">
             <article>
                 <h2>Work experience</h2>
-
+work
                 <section>
                     <h3>15/08/2002–Present Software engineer, JSC "Mozyr Oil Refinery"</h3>
                     <ul>
@@ -133,7 +147,7 @@ const absentVowel = (x) => {
             </article>
         </div>
 
-        <div class="education">
+        <div class="education" id="education">
             <h2>Education</h2>
             01/09/1996–30/06/2002 Belarusian State University of Informatics &amp; Radioelectronics, FITC, systems engineer</div>
 
