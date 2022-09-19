@@ -52,14 +52,14 @@
                 <h2>Code example</h2>
                 <pre>
 function findWordSequence(headTail){
- 
+
   var headTail = headTail+headTail[0];  // tail is a head, lets add it
-  
+
   // traversing wordList to match the word by provided pattern
-  const findWord = (start, fin, len) => { 
+  const findWord = (start, fin, len) =&gt; {
     for (var i=0; i &lt; wordList.length; i++){
-      if ((wordList[i].length == len) &&
-          (wordList[i][0] == start) &&
+      if ((wordList[i].length == len) &amp;&amp;
+          (wordList[i][0] == start) &amp;&amp;
           (wordList[i][wordList[i].length-1] == fin)
          ){
          return wordList[i];
@@ -67,15 +67,15 @@ function findWordSequence(headTail){
     }
     return 0; // return 0 if no word has been found
   }
-  
+
   var wordPatterns = []; // [start,fin,len]
-  var text = headTail.toLowerCase().match(/[a-z]/g);   // parse all letters 
+  var text = headTail.toLowerCase().match(/[a-z]/g);   // parse all letters
   var text2 = headTail.toLowerCase().match(/\d{1,}/g); // and word lengths
-   
-  for (var i=0;i &lt; text2.length;i++){ // fill wordPatterns 
+
+  for (var i=0;i &lt; text2.length;i++){ // fill wordPatterns
     wordPatterns[i] = [text[i],text[i+1],text2[i]];
   }
-  
+
   for (i=0; i &lt; text2.length; i++){ // traverse wordList to find words chain
     var x = findWord (wordPatterns[i][0],wordPatterns[i][1],wordPatterns[i][2]);
     if (x == 0){
@@ -131,7 +131,7 @@ function findWordSequence(headTail){
             <h2>Education</h2>
             01/09/1996–30/06/2002 Belarusian State University of Informatics &amp; Radioelectronics, FITC, systems engineer</div>
         <div class="personal">
-            <h2>Personal skills</h2>Good communication skill, team player, English A2 <br/></div>
+            <h2>Personal skills</h2>Good communication skill, team player, English A2 <br></div>
         <div class="footer">
             <footer><a href="https://github.com/xctx/">My GitHub</a> | &copy; 2021 |
                 <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="80" alt="Rolling Scopes School"></a>
